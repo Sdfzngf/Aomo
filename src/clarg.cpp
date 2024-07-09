@@ -14,12 +14,14 @@ int DisplayHelpInformation(vector<string> v)
 {
     if (v.size() == 1)
     {
-        Print(HELPINFORMATION << endl);
+        Print(HELPMESSAGES << endl);
         return 0;
     }
     else
     {
-        for (int i = 1; i < v.size(); i++)
+	PrintError("命令行选项 \"--help\" 的参数过多");
+    	return TOOMANYOPTIONS;
+        /*for (int i = 1; i < v.size(); i++)
         {
             if (v[i] == "-o")
             {
@@ -41,7 +43,7 @@ int DisplayHelpInformation(vector<string> v)
             {
                 dspl("--version","显示版本","aomo --version");
             }
-        }
+        }*/
     }
     return DONE;
 }

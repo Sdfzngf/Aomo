@@ -97,5 +97,5 @@ int CLArg(vector<vector<string>> arg)
     {
         PrintInJSON(arg);
     }
-    return Parser(inputfile,outputfile);
+    return Preprocess(inputfile,outputfile);
 }

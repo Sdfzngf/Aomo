@@ -8,10 +8,11 @@
 #define NOTSPECIFIEDINPUTFILE 4
 #define NOTSPECIFIEDOUTPUTFILE 5
 #define TOOMANYOUTPUTFILE 6
-#define HELPINFORMATION "用法:\n  aomo [选项] 命令\
-\n选项:\
-\n  --help                   显示帮助信息\
-\n  -o <文件>                指定输出文件\
-\n输入 \"aomo --help [选项]\" 查看详细帮助"
+#define HELPMESSAGES "用法:  aomo <输入文件> [选项]\
+\n\
+\n  -h --help               显示帮助信息\
+\n  -o <文件>               指定输出文件\
+\n  --verbose               开启详细输出\
+\n  --version               显示版本"
 
 #endif

@@ -6,8 +6,8 @@ using namespace std;
 
 extern bool verbose;
 
-//解析器
-int Parser(vector<string> inputfile,vector<string> outputfile)
+//预处理器
+int Preprocess(vector<string> inputfile,vector<string> outputfile)
 {
     if (verbose)
     {
@@ -31,5 +31,6 @@ int Parser(vector<string> inputfile,vector<string> outputfile)
         PrintError("输出文件只能有一个" << endl);
         return TOOMANYOUTPUTFILE;
     }
+
     return 0;
 }
