@@ -8,6 +8,7 @@
 #define NOTSPECIFIEDINPUTFILE 4
 #define NOTSPECIFIEDOUTPUTFILE 5
 #define TOOMANYOUTPUTFILE 6
+#define IOERROR 7
 #define HELPMESSAGES "用法:  aomo <输入文件> [选项]\
 \n\
 \n  -h --help               显示帮助信息\
